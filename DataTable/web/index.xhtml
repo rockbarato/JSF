@@ -24,6 +24,12 @@
 			</h:panelGrid>
 			
 			<h:commandButton value="Agregar" actionListener="#{personBean.addPerson()}"/>
+			
+			<h:dataTable value="#{personBean.lstPersonas}">
+				<h:column>
+					<h:outputLabel value="#{personBean.person.firstName}"/>
+				</h:column>
+			</h:dataTable>
 		</h:form>
     </h:body>
 </html>
